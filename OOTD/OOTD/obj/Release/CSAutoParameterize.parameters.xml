@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="myConnection-Web.config Connection String" description="myConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mjlee\OneDrive\Desktop\OOTD\OOTD\App_Data\Database.mdf;Integrated Security=True;Connect Timeout=30" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mjlee\\OneDrive\\Desktop\\OOTD\\OOTD\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='myConnection']/@connectionString" />
+  </parameter>
+</parameters>

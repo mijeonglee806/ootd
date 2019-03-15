@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="OOTD.Home" %>
+<%@ Register src="TopMenuControl.ascx" tagname="TopMenuControl" tagprefix="uc1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>[OOTD]Outfit Of The Day</title>
+    <style type="text/css">
+        .bodyContent {
+            height: 500px;
+            vertical-align: top;
+            padding: 100px;
+        }
+        .menuUser {
+            width: 200px;
+            text-align: right;
+        }
+        .menuBar {
+            background-color: #b98b5f;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        body {
+            background-image: url("/img/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom, right;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width:100%;" border="0">
+        <tr> <!-- LOGO -->
+            <td colspan="3" style="text-align: center">
+                <asp:HyperLink ID="hyperTitle" runat="server" NavigateUrl="~/Home.aspx">
+                <asp:Image ID="imgTitle" runat="server" Height="80px" ImageUrl="~/img/ootd.jpg" Width="200px" />
+                </asp:HyperLink>
+            </td>
+        </tr>
+        <tr> <!-- Logined user & Cart-->
+            <td class="auto-style3"></td>
+            <td class="menuUser">
+                <asp:Label ID="lblUser" runat="server" Font-Bold="True" Font-Names="Calibri" Font-Underline="True"></asp:Label>
+                <asp:ImageButton ID="btnUser" runat="server" Height="30px" Width="30px" ImageUrl="~/img/user.png" OnClick="btnUser_Click" />
+                <asp:ImageButton ID="btnCart" runat="server" Height="30px" Width="30px" ImageUrl="~/img/cart.png" OnClick="btnCart_Click" />
+            </td>
+        </tr>
+        <tr> <!-- Menu -->
+            <td colspan="2" class="menuBar">
+                <uc1:TopMenuControl ID="TopMenuControl1" runat="server" />
+            </td>
+        </tr>
+            <!-- Body -->
+        <tr>
+            <td class="bodyContent" colspan="2">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">OOTD</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

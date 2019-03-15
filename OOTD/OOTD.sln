@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOTD", "OOTD\OOTD.csproj", "{E1340E7F-23B8-4A02-83EE-E1768FA8D370}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "OOTD.Azure", "OOTD.Azure\OOTD.Azure.ccproj", "{AA8F68F7-8A56-48FA-9937-7332766A346C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1340E7F-23B8-4A02-83EE-E1768FA8D370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1340E7F-23B8-4A02-83EE-E1768FA8D370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1340E7F-23B8-4A02-83EE-E1768FA8D370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1340E7F-23B8-4A02-83EE-E1768FA8D370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA8F68F7-8A56-48FA-9937-7332766A346C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8F68F7-8A56-48FA-9937-7332766A346C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8F68F7-8A56-48FA-9937-7332766A346C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8F68F7-8A56-48FA-9937-7332766A346C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {839402B7-65C0-402A-BBD6-BBDBD212846E}
+	EndGlobalSection
+EndGlobal
